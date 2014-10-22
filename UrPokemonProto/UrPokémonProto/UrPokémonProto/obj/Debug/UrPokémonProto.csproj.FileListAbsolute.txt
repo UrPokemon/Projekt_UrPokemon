@@ -10,3 +10,6 @@ C:\Users\Philipp\Documents\2014-15\PPM\Köllö\UrPokemonProto\UrPokémonProto\Ur
 D:\Users\Fabian\Documents\GitHub\UrPokemonProto\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.exe.config
 D:\Users\Fabian\Documents\GitHub\UrPokemonProto\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.exe
 D:\Users\Fabian\Documents\GitHub\UrPokemonProto\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.pdb
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokemonProto\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.exe.config
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokemonProto\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.exe
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokemonProto\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.pdb
