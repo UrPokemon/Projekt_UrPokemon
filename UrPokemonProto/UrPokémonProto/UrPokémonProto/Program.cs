@@ -10,10 +10,9 @@ namespace UrPokémonProto
     {
         static void Main(string[] args)
         {
-            
-            Random zufall = new Random();
-            double z = zufall as double;
-            if (zufall * 2 <= 1)
+            Random Rnd = new Random();
+            int RndNr3 = Rnd.Next(0, 2);
+            if (RndNr3 <= 1)
             {
                 PokémonA.zug = true;
             }
