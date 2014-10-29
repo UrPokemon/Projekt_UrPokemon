@@ -41,9 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attacke1.cs" />
-    <Compile Include="Attacke2.cs" />
-    <Compile Include="Attacke3.cs" />
+    <Compile Include="Attacken.cs" />
     <Compile Include="ITFAttaken.cs" />
     <Compile Include="Pokémon.cs" />
     <Compile Include="PokémonA.cs" />

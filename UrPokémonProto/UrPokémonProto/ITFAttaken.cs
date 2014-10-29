@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace UrPokémonProto
 {
-    class Attacke2:ITFAttaken
+    public interface ITFAttaken
     {
-        public void angriff(double stärke = 20);
+        void angriff(double staerke, string name, double accuracy);
     }
+        
 }
