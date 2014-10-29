@@ -1,0 +1,15 @@
+﻿<Window x:Class="testWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <Image Source="hintergrund.jpg" Stretch="Fill"/>
+        <Image Margin="285,136,40,104" Source="Untergrund.jpg" Stretch="Fill"/>
+        <Image Margin="40,136,285,104" Source="Untergrund.jpg" Stretch="Fill"/>
+        <Image Margin="311,94,74,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61"/>
+        <Image Margin="40,23,316,128" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\bin\Debug\testWPF.exe.config
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\bin\Debug\testWPF.exe
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\bin\Debug\testWPF.pdb
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF.csprojResolveAssemblyReference.cache
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\MainWindow.baml
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\MainWindow.g.cs
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\App.g.cs
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF_MarkupCompile.cache
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF.g.resources
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF.Properties.Resources.resources
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF.csproj.GenerateResource.Cache
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF.exe
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\obj\Debug\testWPF.pdb
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\bin\Debug\WpfAnimatedGif.dll
+D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\testWPF\testWPF\bin\Debug\WpfAnimatedGif.xml
