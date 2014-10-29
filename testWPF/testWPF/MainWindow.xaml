@@ -8,17 +8,17 @@
 
         <Image Source="hintergrund.jpg" Stretch="Fill"/>
         <Viewbox>
-            <Image Margin="300,150,0,100" Source="Untergrund.jpg" Stretch="Fill"/>
+            <Image Margin="280,170,0,100" Source="Untergrund.jpg" Stretch="Fill"/>
         </Viewbox>
         <Viewbox>
-            <Image Margin="0,150,300,100" Source="Untergrund.jpg" Stretch="Fill"/>
+            <Image Margin="20,170,300,100" Source="Untergrund.jpg" Stretch="Fill" Width="184"/>
         </Viewbox>
 
         <Viewbox>
-            <Image Margin="311,115,30,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61" Width="120"/>
+            <Image Margin="311,115,30,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61" Width="120" />
         </Viewbox>
-        <Viewbox>
-            <Image Margin="50,50,350,125" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill" Height="138" Width="125" RenderTransformOrigin="0.506,0.534"/>
+        <Viewbox Margin="10,0,-10,0">
+            <Image Margin="40,70,350,125" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill" Height="150" Width="140" RenderTransformOrigin="0.506,0.534"/>
         </Viewbox>
 
     </Grid>
