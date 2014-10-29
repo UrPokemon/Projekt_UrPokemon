@@ -19,3 +19,11 @@ D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPo
 D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.csprojResolveAssemblyReference.cache
 D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.exe
 D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.pdb
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.exe.config
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.exe
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.pdb
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.exe
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\bin\Debug\UrPokémonProto.pdb
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\obj\Debug\UrPokémonProto.csprojResolveAssemblyReference.cache

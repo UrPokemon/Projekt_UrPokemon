@@ -4,3 +4,6 @@ D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPo
 D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPokémonProto\obj\Release\UrPokémonProto.csprojResolveAssemblyReference.cache
 D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPokémonProto\obj\Release\UrPokémonProto.exe
 D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\UrPokémonProto\UrPokémonProto\obj\Release\UrPokémonProto.pdb
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\bin\Release\UrPokémonProto.exe.config
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\obj\Release\UrPokémonProto.exe
+C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\UrPokémonProto\UrPokémonProto\obj\Release\UrPokémonProto.pdb

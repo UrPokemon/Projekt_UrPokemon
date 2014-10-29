@@ -23,7 +23,7 @@ namespace testWPF
         public MainWindow()
         {
             InitializeComponent();
-
+            
         }
     }
 }
