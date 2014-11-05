@@ -8,18 +8,20 @@
 
         <Image Source="hintergrund.jpg" Stretch="Fill"/>
         <Viewbox>
-            <Image Margin="280,170,0,100" Source="Untergrund.jpg" Stretch="Fill"/>
+            <Image Margin="300,170,20,100" Source="Untergrund.jpg" Stretch="Fill" Width="180"/>
         </Viewbox>
         <Viewbox>
-            <Image Margin="20,170,300,100" Source="Untergrund.jpg" Stretch="Fill" Width="184"/>
+            <Image Margin="20,170,300,100" Source="Untergrund.jpg" Stretch="Fill" Width="180"/>
         </Viewbox>
 
         <Viewbox>
-            <Image Margin="311,115,30,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61" Width="120" />
+            <Image Margin="311,115,30,120" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61" Width="120" />
         </Viewbox>
-        <Viewbox Margin="10,0,-10,0">
+        <Viewbox Margin="0,-10,0,10">
             <Image Margin="40,70,350,125" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill" Height="150" Width="140" RenderTransformOrigin="0.506,0.534"/>
         </Viewbox>
+        <TextBlock Name="TextBlock1" Text="TEST TEXT-BLOCK" Foreground="Black" Margin="20,270,215,20"/>
+
 
     </Grid>
 </Window>
