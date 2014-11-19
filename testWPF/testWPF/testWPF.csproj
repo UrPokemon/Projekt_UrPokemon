@@ -64,12 +64,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Attacken.cs" />
+    <Compile Include="ITFAttacken.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pokémon.cs" />
+    <Compile Include="PokémonA.cs" />
+    <Compile Include="PokémonB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -108,9 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="006a.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Pokéball_Wurf.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Untergrund.jpg" />
