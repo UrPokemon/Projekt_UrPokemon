@@ -43,3 +43,5 @@ D:\Users\Fabian\Documents\GitHub\Projekt_UrPokemon\testWPF\testWPF\obj\Debug\tes
 D:\Users\Fabian\Documents\GitHub\Projekt_UrPokemon\testWPF\testWPF\obj\Debug\testWPF.g.resources
 D:\Users\Fabian\Documents\GitHub\Projekt_UrPokemon\testWPF\testWPF\obj\Debug\testWPF.Properties.Resources.resources
 D:\Users\Fabian\Documents\GitHub\Projekt_UrPokemon\testWPF\testWPF\obj\Debug\testWPF.csproj.GenerateResource.Cache
+D:\Users\Fabian\Documents\GitHub\Projekt_UrPokemon\testWPF\testWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Users\Fabian\Documents\GitHub\Projekt_UrPokemon\testWPF\testWPF\obj\Debug\testWPF_MarkupCompile.lref
