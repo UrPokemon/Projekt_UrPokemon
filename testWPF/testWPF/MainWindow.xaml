@@ -35,5 +35,13 @@
         <Button Name="A3" Content="Test3" Click="A3_Click_1" Margin="41,347,509,33"/>
         <Button Name="A4" Content="Test4" Click="A4_Click_1" Margin="263,347,287,33"/>
 
+
+        <Button Name="b1" Content="Test5" Click="b1_Click_1" Margin="41,310,509,70" Visibility="Hidden"/>
+        <Button Name="b2" Content="Test6" Click="b2_Click_1" Margin="263,310,287,70" Visibility="Hidden"/>
+        <Button Name="b3" Content="Test7" Click="b3_Click_1" Margin="41,347,509,33" Visibility="Hidden"/>
+        <Button Name="b4" Content="Test8" Click="b4_Click_1" Margin="263,347,287,33" Visibility="Hidden"/>
+
+        <Button Name="weitera" Content="weiter" Click="weitera_Click_1" Margin="263,347,287,33" Visibility="Hidden"/>
+        <Button Name="weiterb" Content="weiter" Click="weiterb_Click_1" Margin="263,347,287,33" Visibility="Hidden"/>
     </Grid>
 </Window>
