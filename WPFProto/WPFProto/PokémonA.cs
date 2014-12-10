@@ -10,6 +10,7 @@ namespace WPFProto
     {
         public double istLeben = maxLeben;
         public static double maxLeben = 150;
+        public double maxLebenwert = maxLeben;
 
         public int staerkeF = 35;
         public string nameF = "Flammenwurf";
@@ -26,7 +27,9 @@ namespace WPFProto
         public double Flammenwurf()
         {
             Attacke = new NormalAttack();
-            double schaden = Attacke.angriff(staerkeF, nameF, accuF);
+
+            double schaden = 0;
+            schaden= Attacke.angriff(staerkeF, nameF, accuF);
             if ((istLeben - schaden) > 0)
             {
                 istLeben = istLeben - schaden;
@@ -44,7 +47,8 @@ namespace WPFProto
         public double Tackle()
         {
             Attacke = new NormalAttack();
-            double schaden = Attacke.angriff(staerkeT, nameT, accuT);
+            double schaden = 0;
+            schaden = Attacke.angriff(staerkeT, nameT, accuT);
             if ((istLeben - schaden) > 0)
             {
                 istLeben = istLeben - schaden;
@@ -62,7 +66,8 @@ namespace WPFProto
         public double Genesung()
         {
             Attacke = new HealingEffects();
-            double schaden = Attacke.angriff(staerkeG, nameG, accuG);
+            double schaden = 0;
+            schaden = Attacke.angriff(staerkeG, nameG, accuG);
             if ((istLeben + schaden) < maxLeben)
             {
                 istLeben = istLeben + schaden;

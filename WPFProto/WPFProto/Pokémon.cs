@@ -9,7 +9,7 @@ namespace WPFProto
     public class Pokémon
     {
         ITFAttacken attacke;
-        double schaden = 0;
+        //double schaden = 0;
 
         public ITFAttacken Attacke
         {
@@ -26,7 +26,7 @@ namespace WPFProto
 
 
 
-        public double angriff(double staerke = 0, string name = "", double accuracy = 0)                      //Angriff mit den benötigten Werten (Stärke und Name der Attacke)
+       /* public double angriff(double staerke = 0, string name = "", double accuracy = 0)                      //Angriff mit den benötigten Werten (Stärke und Name der Attacke)
         {
             schaden = attacke.angriff(staerke, name, accuracy);
             return schaden;
@@ -36,6 +36,6 @@ namespace WPFProto
         {
 
         }
-
+        */
     }
 }

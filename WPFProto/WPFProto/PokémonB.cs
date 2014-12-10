@@ -10,6 +10,7 @@ namespace WPFProto
     {
         public double istLeben = maxLeben;
         public static double maxLeben = 180;
+        public double maxLebenwert=maxLeben;
 
         public int staerkeR = 25;
         public string nameR = "Rasierblatt";
@@ -26,7 +27,8 @@ namespace WPFProto
         public double Rasierblatt()
         {
             Attacke = new NormalAttack();
-            double schaden = Attacke.angriff(staerkeR, nameR, accuR);
+            double schaden = 0;
+            schaden = Attacke.angriff(staerkeR, nameR, accuR);
             if ((istLeben - schaden) > 0)
             {
                 istLeben = istLeben - schaden;
@@ -44,7 +46,8 @@ namespace WPFProto
         public double Tackle()
         {
             Attacke = new NormalAttack();
-            double schaden = Attacke.angriff(staerkeT, nameT, accuT);
+            double schaden = 0;
+            schaden = Attacke.angriff(staerkeT, nameT, accuT);
             if ((istLeben - schaden) > 0)
             {
                 istLeben = istLeben - schaden;
@@ -62,7 +65,8 @@ namespace WPFProto
         public double Genesung()
         {
             Attacke = new HealingEffects();
-            double schaden = Attacke.angriff(staerkeG, nameG, accuG);
+            double schaden = 0;
+            schaden = Attacke.angriff(staerkeG, nameG, accuG);
             if ((istLeben + schaden) < maxLeben)
             {
                 istLeben = istLeben + schaden;
