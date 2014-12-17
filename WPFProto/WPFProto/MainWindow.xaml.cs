@@ -30,6 +30,21 @@ namespace WPFProto
         {
             InitializeComponent();
 
+            ug1.Visibility = Visibility.Hidden;
+            ug2.Visibility = Visibility.Hidden;
+
+            b.Visibility = Visibility.Hidden;
+            g.Visibility = Visibility.Hidden;
+
+            LR1.Visibility = Visibility.Hidden;
+            LR2.Visibility = Visibility.Hidden;
+
+            L1.Visibility = Visibility.Hidden;
+            L2.Visibility = Visibility.Hidden;
+
+            LB1.Visibility = Visibility.Hidden;
+            LB2.Visibility = Visibility.Hidden;
+
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
             A3.Visibility = Visibility.Hidden;
@@ -44,31 +59,10 @@ namespace WPFProto
             T2.Visibility = Visibility.Hidden;
             W.Visibility = Visibility.Hidden;
 
-            //Glurak.Tackle();
-            //Bisafloor.Tackle();
+            Glurak.Tackle();
+            Bisafloor.Tackle();
 
-            Random Rnd = new Random();
-            int RndNr3 = Rnd.Next(0, 2);
-
-            
-
-            if (RndNr3 < 1)
-            {
-                T1.Text = "Spieler 1 beginnt!";
-
-                W.Visibility = Visibility.Visible;
-                zug = 2;
-                PfeilG.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                W.Visibility = Visibility.Visible;
-
-                T1.Text = "Spieler 2 beginnt!";
-                zug = 1;
-                PfeilB.Visibility = Visibility.Visible;
-            }
-
+            BT.Text = "\t\tWilkommen bei unserem Pokémon Spiel.\n\nBitte entscheiden sie sich wer Spieler 1 und wer Spieler 2 sein soll.\nWenn dies geschehen ist, klicken sie auf weiter. Über dem Pokémon des Spielers,\nder aktuell an der reihe ist erscheint ein Pfeil.\nBeendet wird das Spiel sobald das Leben eines Pokémons auf 0 sinkt.\n\n(Bildmaterial der Pokémon bzw. der Hintergründe ist besitz von Nintendo)";
         }
 
         public void EndGme()
@@ -127,20 +121,18 @@ namespace WPFProto
         private void A1_Click_1(object sender, RoutedEventArgs e)
         {
             double altleben = Bisafloor.istLeben;
+            Glurak.Tackle();
             W.Visibility = Visibility.Visible;
 
-            Glurak.Tackle();
-            //double schaden = Glurak.Tackle();
-
-            if (altleben == Bisafloor.istLeben)
+            /*if (altleben == Bisafloor.istLeben)
             {
                 T1.Text = "Glurak setzt " + Glurak.nameT + " ein, \rdoch der Angriff ging daneben.";
             }
             else
-            {
+            {*/
                 LB2Scale();
-                T1.Text = "Glurak setzt " + Glurak.nameT + " ein! \r" + /*schaden + " Schaden verursacht! \r" + */  "Bisafloors Leben sinkt auf " + Bisafloor.istLeben;
-            }
+                T1.Text = "Glurak setzt " + Glurak.nameT + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/  "Bisafloors Leben sinkt auf " + Bisafloor.istLeben;
+            //}
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
             A3.Visibility = Visibility.Hidden;
@@ -158,15 +150,15 @@ namespace WPFProto
             Glurak.Flammenwurf();
             //double schaden = Glurak.Flammenwurf();
 
-            if (Bisafloor.istLeben == altLeben)
+            /*if (Bisafloor.istLeben == altLeben)
             {
                 T1.Text = "Glurak setzt " + Glurak.nameF + " ein, \rdoch der Angriff ging daneben.";
             }
             else
-            {
+            {*/
                 LB2Scale();
                 T1.Text = "Glurak setzt " + Glurak.nameF + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/ "Bisafloors Leben sinkt auf " + Bisafloor.istLeben;
-            }
+            //}
 
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
@@ -185,7 +177,7 @@ namespace WPFProto
             Glurak.Genesung();
             //double schaden = Glurak.Genesung();
 
-            if (altLeben == Glurak.maxLebenwert)
+            /*if (altLeben == Glurak.maxLebenwert)
             {
                 T1.Text = "Glurak setzt " + Glurak.nameG + " ein, doch \r das Leben ist bereits bereits Maximal.";
             }
@@ -194,10 +186,10 @@ namespace WPFProto
                 T1.Text = "Glurak setzt " + Glurak.nameG + " ein, doch es wird \r nicht geheilt.";
             }
             else
-            {
+            {*/
                 LB1Scale();
-                T1.Text = "Glurak setzt " + Glurak.nameG + " ein! \r " /*+ schaden + " Schaden geheilt! \r" */+ "Gluraks Leben steigt auf " + Glurak.istLeben;
-            }
+                T1.Text = "Glurak setzt " + Glurak.nameG + " ein! \r " + /*schaden + " HP wurden geheilt! \r" +*/ "Gluraks Leben steigt auf " + Glurak.istLeben;
+            //}
 
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
@@ -215,15 +207,15 @@ namespace WPFProto
 
             Bisafloor.Tackle();
             //double schaden = Bisafloor.Tackle();
-            if (altleben == Glurak.istLeben)
+            /*if (altleben == Glurak.istLeben)
             {
                 T1.Text = "Bisafloor setzt " + Bisafloor.nameT + " ein, \rdoch der Angriff ging ins leere!";
             }
             else
-            {
+            {*/
                 LB1Scale();
-                T1.Text = "Bisafloor setzt " + Bisafloor.nameT + " ein! \r" /*+ schaden + " Schaden verursacht! \r" */+ "Gluraks Leben sinkt auf " + Glurak.istLeben;
-            }
+                T1.Text = "Bisafloor setzt " + Bisafloor.nameT + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/ "Gluraks Leben sinkt auf " + Glurak.istLeben;
+            //}
             
 
 
@@ -244,15 +236,15 @@ namespace WPFProto
             Bisafloor.Rasierblatt();
             //double schaden = Bisafloor.Rasierblatt();
 
-            if (altleben == Glurak.istLeben)
+            /*if (altleben == Glurak.istLeben)
             {
                 T1.Text = "Bisafloor setzt " + Bisafloor.nameR + " ein, \rdoch der Angriff ging ins leere!"+altleben+" "+Glurak.istLeben ;
             }
             else
-            {
+            {*/
                 LB1Scale();
-                T1.Text = "Bisafloor setzt " + Bisafloor.nameR + " ein! \r" /*+ schaden + " Schaden verursacht! \r" */+ "Gluraks Leben sinkt auf " + Glurak.istLeben;
-            }
+                T1.Text = "Bisafloor setzt " + Bisafloor.nameR + " ein! \r" + /*schaden + " Schaden verursacht! \r" + */"Gluraks Leben sinkt auf " + Glurak.istLeben;
+            //}
 
             B1.Visibility = Visibility.Hidden;
             B2.Visibility = Visibility.Hidden;
@@ -271,7 +263,7 @@ namespace WPFProto
             
             //double schaden = Bisafloor.Genesung();
 
-            if (altleben == Bisafloor.maxLebenwert)
+            /*if (altleben == Bisafloor.maxLebenwert)
             {
                 T1.Text = "Bisafloor setzt " + Bisafloor.nameG + " ein, doch \r das Leben ist bereits auf dem Maximalwert.";
 
@@ -281,10 +273,10 @@ namespace WPFProto
                 T1.Text = "Bisafloor setzt " + Bisafloor.nameG + " ein, doch \r es wurde nicht geheilt.";
             }
             else
-            {
+            {*/
                 LB1Scale();
-                T1.Text = "Bisafloor setzt " + Bisafloor.nameG + " ein! \r" /*+ schaden + " Schaden verursacht! \r" */+ "Bisafloors Leben steigt auf " + Bisafloor.istLeben;
-            }
+                T1.Text = "Bisafloor setzt " + Bisafloor.nameG + " ein! \r" + /*schaden + " Schaden verursacht! \r" + */"Bisafloors Leben steigt auf " + Bisafloor.istLeben;
+            //}
 
             B1.Visibility = Visibility.Hidden;
             B2.Visibility = Visibility.Hidden;
@@ -393,6 +385,43 @@ namespace WPFProto
         private void B3_Leave(object sender, MouseEventArgs e)
         {
             T2.Visibility = Visibility.Hidden;
+        }
+
+        private void WB_Click_1(object sender, RoutedEventArgs e)
+        {
+            Random Rnd = new Random();
+            int RndNr3 = Rnd.Next(0, 2);
+
+            g.Visibility = Visibility.Visible;
+            b.Visibility = Visibility.Visible;
+            ug1.Visibility = Visibility.Visible;
+            ug2.Visibility = Visibility.Visible;
+            L1.Visibility = Visibility.Visible;
+            L2.Visibility = Visibility.Visible;
+            LB1.Visibility = Visibility.Visible;
+            LB2.Visibility = Visibility.Visible;
+            BT.Visibility = Visibility.Hidden;
+            LR1.Visibility = Visibility.Visible;
+            LR2.Visibility = Visibility.Visible;
+            WB.Visibility = Visibility.Hidden;
+
+            if (RndNr3 < 1)
+            {
+                T1.Text = "Spieler 1 beginnt!";
+
+                W.Visibility = Visibility.Visible;
+                zug = 2;
+                PfeilG.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                W.Visibility = Visibility.Visible;
+
+                T1.Text = "Spieler 2 beginnt!";
+                zug = 1;
+                PfeilB.Visibility = Visibility.Visible;
+            }
+
         }
 
     }

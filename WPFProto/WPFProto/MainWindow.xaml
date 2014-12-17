@@ -6,20 +6,20 @@
     <Grid>
         
         <Image Source="hintergrund.jpg" Stretch="Fill"/>
-        <Image Margin="285,136,40,104" Source="Untergrund.jpg" Stretch="Fill"/>
-        <Image Margin="40,136,285,104" Source="Untergrund.jpg" Stretch="Fill"/>
-        <Image Margin="311,94,74,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61"/>
-        <Image Margin="40,23,316,128" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill"/>
+        <Image Name="ug1" Margin="285,136,40,104" Source="Untergrund.jpg" Stretch="Fill"/>
+        <Image Name="ug2" Margin="40,136,285,104" Source="Untergrund.jpg" Stretch="Fill"/>
+        <Image Name="b" Margin="311,94,74,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61"/>
+        <Image Name="g" Margin="40,23,316,128" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill"/>
 
         <Image Name ="LR1" Margin="145,30,280,270" Source="lebensanzeige.png" Stretch="Fill"/>
         <Image Name ="LR2" Margin="390,30,35,270" Source="lebensanzeige.png" Stretch="Fill"/>
 
-        <Image Height="4" Width="62" Margin="159,29,280,270" Source="lebensbarH.png" Stretch="Fill"/>
+        <Image Name="L1" Height="4" Width="62" Margin="159,29,280,270" Source="lebensbarH.png" Stretch="Fill"/>
         <Canvas Height="4" Width="62" Margin="159,29,280,270">
             <Image Name ="LB1" Width="62" Height="4" Source="lebensbar.png" Stretch="Fill" />
         </Canvas>
 
-        <Image Height="4" Width="62" Margin="408,29,38,270" Source="lebensbarH.png" Stretch="Fill"/>
+        <Image Name="L2" Height="4" Width="62" Margin="408,29,38,270" Source="lebensbarH.png" Stretch="Fill"/>
         <Canvas Height="4" Width="62" Margin="408,29,38,270">
         <Image Name ="LB2" Width="62" Height="4" Source="lebensbar.png" Stretch="Fill" />
         </Canvas>
@@ -36,6 +36,7 @@
                 </Style>
             </Button.Style>
         </Button>-->
+        <TextBlock Name="BT" Text="" Margin="20,23,15,104" />
         <TextBlock Name="T1" Text="" FontSize="15" Margin="20,235,190,15"></TextBlock>
         <TextBlock Name="T2" FontSize="15" Margin="355,235,15,15"></TextBlock>
 
@@ -48,8 +49,9 @@
         <Button Name="B3" Content="Erholung"    Click="B3_Click_1" MouseEnter ="B3_Hover" MouseLeave="B3_Leave" Margin="20,265,360,26"/>
         
         <Button Name="W" Content="Weiter" Click="W1_Click_1" Margin="355,235,15,56"></Button>
+        <Button Name="WB" Content="Weiter" Click="WB_Click_1" Margin="355,235,15,56"/>
 
-        <Image Margin="121,27,377,268" Source="pfeil.png" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">
+        <Image Margin="124,20,373,275" Source="pfeil.png" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -59,7 +61,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Margin="366,27,132,268" Source="pfeil.png" Name="PfeilB" Stretch="Fill" RenderTransformOrigin="-4.114,-1.685">
+        <Image Margin="358,32,141,263" Source="pfeil.png" Name="PfeilB" Stretch="Fill" RenderTransformOrigin="-4.114,-1.685">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
