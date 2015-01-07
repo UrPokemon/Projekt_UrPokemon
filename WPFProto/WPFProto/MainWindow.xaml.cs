@@ -320,7 +320,7 @@ namespace WPFProto
                 zug = 0;
             }
         }
-
+        /*
         private void A1_Hover(object sender, MouseEventArgs e)
         {
             T2.Visibility = Visibility.Visible;
@@ -386,7 +386,7 @@ namespace WPFProto
         {
             T2.Visibility = Visibility.Hidden;
         }
-
+        */
         private void WB_Click_1(object sender, RoutedEventArgs e)
         {
             Random Rnd = new Random();

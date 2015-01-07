@@ -10,23 +10,22 @@ namespace WPFProto
     {
         static Random Rnd = new Random();
         double acc = Rnd.Next(0, 100);
-
-        double schwank = Rnd.Next(-5, +5);
         double astaerke;
 
         public double angriff(double stärke, string name, double accuracy)
         {
             astaerke = 0;
+            double schwank = Rnd.Next(-5, +5);
 
             if (acc <= accuracy)
             {
-                astaerke = stärke + schwank;
+                astaerke = stärke + (schwank);
                 return astaerke;
 
             }
             else
             {
-                astaerke = 0;
+                astaerke = 0.0;
                 return astaerke;
             }
         }
@@ -38,20 +37,20 @@ namespace WPFProto
         double acc = Rnd.Next(0, 100);
 
         double schwank = Rnd.Next(-10, +10);
-        double statusdiff = 0;
+        double statusdiff = 0.0;
 
         public double angriff(double stärke, string name, double accuracy)
         {
-            statusdiff = 0;
+            statusdiff = 0.0;
 
             if (acc <= accuracy)
             {
-                statusdiff = stärke + schwank;
+                statusdiff = stärke + (schwank);
                 return statusdiff;
             }
             else
             {
-                statusdiff = 0;
+                statusdiff = 0.0;
                 return statusdiff;
             }
 

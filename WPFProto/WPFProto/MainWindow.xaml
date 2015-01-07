@@ -40,13 +40,13 @@
         <TextBlock Name="T1" Text="" FontSize="15" Margin="20,235,190,15"></TextBlock>
         <TextBlock Name="T2" FontSize="15" Margin="355,235,15,15"></TextBlock>
 
-        <Button Name="A1" Content="Tackle"      Click="A1_Click_1" MouseEnter ="A1_Hover" MouseLeave="A1_Leave" Margin="20,235,360,56"/>
-        <Button Name="A2" Content="Flammenwurf" Click="A2_Click_1" MouseEnter ="A2_Hover" MouseLeave="A2_Leave" Margin="173,235,207,56"/>
-        <Button Name="A3" Content="Genesung"    Click="A3_Click_1" MouseEnter ="A3_Hover" MouseLeave="A3_Leave" Margin="20,265,360,26"/>
+        <Button Name="A1" Content="Tackle"      Click="A1_Click_1"  Margin="20,235,360,56"/>
+        <Button Name="A2" Content="Flammenwurf" Click="A2_Click_1"  Margin="173,235,207,56"/>
+        <Button Name="A3" Content="Genesung"    Click="A3_Click_1"  Margin="20,265,360,26"/>
 
-        <Button Name="B1" Content="Tackle"      Click="B1_Click_1" MouseEnter ="B1_Hover" MouseLeave="B1_Leave" Margin="20,235,360,56"/>
-        <Button Name="B2" Content="Rasierblatt" Click="B2_Click_1" MouseEnter ="B2_Hover" MouseLeave="B2_Leave" Margin="173,235,207,56"/>
-        <Button Name="B3" Content="Erholung"    Click="B3_Click_1" MouseEnter ="B3_Hover" MouseLeave="B3_Leave" Margin="20,265,360,26"/>
+        <Button Name="B1" Content="Tackle"      Click="B1_Click_1"  Margin="20,235,360,56"/>
+        <Button Name="B2" Content="Rasierblatt" Click="B2_Click_1"  Margin="173,235,207,56"/>
+        <Button Name="B3" Content="Erholung"    Click="B3_Click_1"  Margin="20,265,360,26"/>
         
         <Button Name="W" Content="Weiter" Click="W1_Click_1" Margin="355,235,15,56"></Button>
         <Button Name="WB" Content="Weiter" Click="WB_Click_1" Margin="355,235,15,56"/>
