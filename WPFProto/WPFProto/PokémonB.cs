@@ -8,9 +8,11 @@ namespace WPFProto
 {
     public class PokémonB : Pokémon
     {
-        public double istLeben = maxLeben;
-        public static double maxLeben = 180;
-        public double maxLebenwert=maxLeben;
+        public double istLeben = PokémonA.maxGLeben;
+        public static double maxLeben = PokémonA.maxGLeben;
+
+        public double istGLeben = maxGLeben;
+        public static double maxGLeben = 180;
 
         public int staerkeR = 25;
         public string nameR = "Rasierblatt";
@@ -20,9 +22,9 @@ namespace WPFProto
         public string nameT = "Tackle";
         public double accuT = 80;
 
-        public int staerkeG = 30;
-        public string nameG = "Genesung";
-        public double accuG = 40;
+        public int staerkeG = 20;
+        public string nameG = "Erholung";
+        public double accuG = 50;
 
         public double Rasierblatt()
         {
@@ -84,18 +86,10 @@ namespace WPFProto
         public double Leben()
         {
             double prozleben = 0;
-            if (istLeben < maxLeben)
-            {
-                prozleben = istLeben / maxLeben;
-                return prozleben;
-            }
-            else if (istLeben == maxLeben)
-            {
-                prozleben = 1;
-                return prozleben;
-            }
-            else
-            { return 0; }
+            
+            prozleben = istLeben / maxLeben;
+            return prozleben;
+            
         }
 
     }

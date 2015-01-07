@@ -8,9 +8,11 @@ namespace WPFProto
 {
     public class PokémonA : Pokémon 
     {
-        public double istLeben = maxLeben;
-        public static double maxLeben = 150;
-        public double maxLebenwert = maxLeben;
+        public double istLeben = PokémonB.maxGLeben;
+        public double maxLeben = PokémonB.maxGLeben;
+
+        public double istGLeben = maxGLeben;
+        public static double maxGLeben=150;
 
         public int staerkeF = 35;
         public string nameF = "Flammenwurf";
@@ -20,9 +22,9 @@ namespace WPFProto
         public string nameT = "Tackle";
         public double accuT = 80;
 
-        public int staerkeG = 20;
+        public int staerkeG = 30;
         public string nameG = "Genesung";
-        public double accuG = 50;
+        public double accuG = 40;
 
         public double Flammenwurf()
         {
