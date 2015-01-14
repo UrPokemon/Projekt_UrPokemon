@@ -52,6 +52,8 @@
         <Button Name="WB" Content="Weiter" Click="WB_Click_1" Margin="355,235,15,56"/>
         <Button Name="WE" Content="Weiter" Click="WE_Click_1" Margin="355,235,15,56"/>
 
+        <Button Name="Aufg" Content="Aufgeben" Click="Aufg_Click_1" Margin="355,268,15,23"/>
+
         <Button Name="end" Content="Ende" Click="end_Click_1" Margin="355,268,15,23"/>
 
         <Image Margin="124,20,373,275" Source="pfeil.png" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">

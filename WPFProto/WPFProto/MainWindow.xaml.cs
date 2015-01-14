@@ -61,16 +61,19 @@ namespace WPFProto
 
             WE.Visibility = Visibility.Hidden;
             end.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
 
             //Glurak.Tackle();
             //Bisafloor.Tackle();
 
-            BT.Text = "\t\tWilkommen bei unserem Pokémon Spiel.\n\nBitte entscheiden sie sich wer Spieler 1 und wer Spieler 2 sein soll.\nWenn dies geschehen ist, klicken sie auf weiter. Über dem Pokémon des Spielers,\nder aktuell an der reihe ist erscheint ein Pfeil.\nBeendet wird das Spiel sobald das Leben eines Pokémons auf 0 sinkt.\n\n(Bildmaterial der Pokémon bzw. der Hintergründe ist besitz von Nintendo)";
+            BT.Text = "\t\tWilkommen bei unserem Pokémon Spiel.\n\nBitte entscheiden sie sich wer Spieler 1 und wer Spieler 2 sein soll.\nWenn dies geschehen ist, klicken sie auf weiter. Über dem Pokémon des Spielers,\nder aktuell an der reihe ist erscheint ein Pfeil.\nBeendet wird das Spiel sobald das Leben eines Pokémons auf 0 sinkt.\n\n(Bildmaterial der Pokémon bzw. der Hintergründe ist Besitz von Nintendo)";
         }
 
         public void NeuesSpiel()
         {
             T1.Text = "Wenn sie ein neues Spiel starten\n wollen klicken sie auf neues Spiel.\n Wenn nicht klicken sie auf Ende";
+            PfeilB.Visibility = Visibility.Hidden;
+            PfeilG.Visibility = Visibility.Hidden;
             
         }
 
@@ -147,6 +150,8 @@ namespace WPFProto
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
             A3.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
+
 
             zug = 1;
 
@@ -174,6 +179,8 @@ namespace WPFProto
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
             A3.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
+
 
             zug = 1;
 
@@ -205,6 +212,8 @@ namespace WPFProto
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
             A3.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
+
 
             zug = 1;
 
@@ -233,6 +242,8 @@ namespace WPFProto
             B1.Visibility = Visibility.Hidden;
             B2.Visibility = Visibility.Hidden;
             B3.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
+
 
             zug = 2;
 
@@ -260,6 +271,7 @@ namespace WPFProto
             B1.Visibility = Visibility.Hidden;
             B2.Visibility = Visibility.Hidden;
             B3.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
 
             zug = 2;
 
@@ -292,6 +304,7 @@ namespace WPFProto
             B1.Visibility = Visibility.Hidden;
             B2.Visibility = Visibility.Hidden;
             B3.Visibility = Visibility.Hidden;
+            Aufg.Visibility = Visibility.Hidden;
 
             zug = 2;
 
@@ -300,6 +313,7 @@ namespace WPFProto
 
         private void W1_Click_1(object sender, RoutedEventArgs e)
         {
+            Aufg.Visibility = Visibility.Visible;
             if (zug ==2)
             {
                 T1.Text = "";
@@ -312,8 +326,9 @@ namespace WPFProto
                 PfeilG.Visibility = Visibility.Visible;
 
                 W.Visibility = Visibility.Hidden;
+                Aufg.Visibility = Visibility.Visible;
 
-                zug = 0;
+                //zug = 0;
             }
             else if(zug ==1)
             {
@@ -324,11 +339,11 @@ namespace WPFProto
                 B3.Visibility = Visibility.Visible;
 
                 W.Visibility = Visibility.Hidden;
-
+                Aufg.Visibility = Visibility.Visible;
                 PfeilG.Visibility = Visibility.Hidden;
                 PfeilB.Visibility = Visibility.Visible;
 
-                zug = 0;
+                //zug = 0;
             }
         }
         
@@ -453,6 +468,28 @@ namespace WPFProto
         private void end_Click_1(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Aufg_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (zug == 1)
+            {
+                B1.Visibility = Visibility.Hidden;
+                B2.Visibility = Visibility.Hidden;
+                B3.Visibility = Visibility.Hidden;
+                T1.Text = "Spieler 2 hat aufgegeben.\nSpieler 1 gewinnt.";
+                WE.Visibility = Visibility.Visible;
+                Aufg.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                A1.Visibility = Visibility.Hidden;
+                A2.Visibility = Visibility.Hidden;
+                A3.Visibility = Visibility.Hidden;
+                T1.Text = "Spieler 1 hat aufgegeben.\nSpieler 2 gewinnt.";
+                WE.Visibility = Visibility.Visible;
+                Aufg.Visibility = Visibility.Hidden;
+            }
         }
 
 
