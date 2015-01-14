@@ -59,10 +59,19 @@ namespace WPFProto
             T2.Visibility = Visibility.Hidden;
             W.Visibility = Visibility.Hidden;
 
+            WE.Visibility = Visibility.Hidden;
+            end.Visibility = Visibility.Hidden;
+
             //Glurak.Tackle();
             //Bisafloor.Tackle();
 
             BT.Text = "\t\tWilkommen bei unserem Pokémon Spiel.\n\nBitte entscheiden sie sich wer Spieler 1 und wer Spieler 2 sein soll.\nWenn dies geschehen ist, klicken sie auf weiter. Über dem Pokémon des Spielers,\nder aktuell an der reihe ist erscheint ein Pfeil.\nBeendet wird das Spiel sobald das Leben eines Pokémons auf 0 sinkt.\n\n(Bildmaterial der Pokémon bzw. der Hintergründe ist besitz von Nintendo)";
+        }
+
+        public void NeuesSpiel()
+        {
+            T1.Text = "Wenn sie ein neues Spiel starten\n wollen klicken sie auf neues Spiel.\n Wenn nicht klicken sie auf Ende";
+            
         }
 
         public void EndGme()
@@ -82,6 +91,7 @@ namespace WPFProto
                 LB1.Width = 0;
 
                 T1.Text = "Glurak kann nicht mehr weiterkämpfen, \rBisafloor gewinnt!";
+                WE.Visibility = Visibility.Visible;
             }
 
             if (Glurak.istLeben == 0)
@@ -99,6 +109,7 @@ namespace WPFProto
                 LB2.Width = 0;
 
                 T1.Text = "Bisafloor kann nicht mehr weiterkämpfen, \rGlurak gewinnt!";
+                WE.Visibility = Visibility.Visible;
             }
         }
 
@@ -320,7 +331,7 @@ namespace WPFProto
                 zug = 0;
             }
         }
-        /*
+        
         private void A1_Hover(object sender, MouseEventArgs e)
         {
             T2.Visibility = Visibility.Visible;
@@ -386,12 +397,15 @@ namespace WPFProto
         {
             T2.Visibility = Visibility.Hidden;
         }
-        */
+    
         private void WB_Click_1(object sender, RoutedEventArgs e)
         {
             Random Rnd = new Random();
             int RndNr3 = Rnd.Next(0, 2);
 
+            LB1Scale();
+            LB2Scale();
+            end.Visibility = Visibility.Hidden;
             g.Visibility = Visibility.Visible;
             b.Visibility = Visibility.Visible;
             ug1.Visibility = Visibility.Visible;
@@ -423,6 +437,25 @@ namespace WPFProto
             }
 
         }
+
+        private void WE_Click_1(object sender, RoutedEventArgs e)
+        {
+            zug = 0;
+            WB.Content = "Neues Spiel";
+            WB.Visibility = Visibility.Visible;
+            end.Visibility = Visibility.Visible;
+            WE.Visibility = Visibility.Hidden;
+            Glurak = new PokémonA();
+            Bisafloor = new PokémonB();
+            NeuesSpiel();
+        }
+        
+        private void end_Click_1(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+
 
     }
 }
