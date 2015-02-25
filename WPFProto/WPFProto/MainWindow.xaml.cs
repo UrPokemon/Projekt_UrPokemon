@@ -135,7 +135,7 @@ namespace WPFProto
         private void A1_Click_1(object sender, RoutedEventArgs e)
         {
             //double altleben = Bisafloor.istLeben;
-            Glurak.Tackle();
+            double schaden= Glurak.Tackle();
             W.Visibility = Visibility.Visible;
 
             /*if (altleben == Bisafloor.istLeben)
@@ -145,7 +145,7 @@ namespace WPFProto
             else
             {*/
                 LB2Scale();
-                T1.Text = "Glurak setzt " + Glurak.nameT + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/  "Bisafloors Leben sinkt auf " + Glurak.istLeben;
+                T1.Text = "Glurak setzt " + Glurak.nameT + " ein! \r" + schaden + " Schaden verursacht! \r" +  "Bisafloors Leben sinkt auf " + Glurak.istLeben;
             //}
             A1.Visibility = Visibility.Hidden;
             A2.Visibility = Visibility.Hidden;
