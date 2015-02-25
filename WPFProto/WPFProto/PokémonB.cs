@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
 
 namespace WPFProto
 {
@@ -26,14 +27,58 @@ namespace WPFProto
         public string nameG = "Erholung";
         public double accuG = 50;
 
+        public int staerkeFo = 0;
+        public string nameFo = "Focus";
+        public double accuFo = 100;
+        public double zusatz = 0;
+        
+        public double schaden = 0;
+
+        public double Focus()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Focus.wav");
+            try
+            {
+                simpleSound.Play();
+            }
+            catch
+            {
+            }
+
+            Attacke = new StatusAttack();
+
+            zusatz = Attacke.angriff(staerkeFo, nameFo, accuFo);
+
+            return zusatz;
+
+        }
+
         public double Rasierblatt()
         {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Rasier.wav");
+            try
+            {
+                simpleSound.Play();
+            }
+            catch
+            {
+            }
+
             Attacke = new NormalAttack();
-            double schaden = 0;
+            //double schaden = 0;
             schaden = Attacke.angriff(staerkeR, nameR, accuR);
+            if (schaden > 0)
+            {
+                schaden = schaden + zusatz;
+            }
+            else
+            {
+                schaden = 0;
+            }
+
             if ((istLeben - schaden) > 0)
             {
-                istLeben = istLeben - schaden;
+                //istLeben = istLeben - schaden; Ausgelagert in Hauptprogramm um Schadensverringerung korrekt ausführen zu können
                 return schaden;
             }
             else if ((istLeben - schaden) <= 0)
@@ -47,12 +92,30 @@ namespace WPFProto
 
         public double Tackle()
         {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Tackle.wav");
+            try
+            {
+                simpleSound.Play();
+            }
+            catch
+            {
+            }
+
             Attacke = new NormalAttack();
-            double schaden = 0;
+            //double schaden = 0;
             schaden = Attacke.angriff(staerkeT, nameT, accuT);
+            if (schaden > 0)
+            {
+                schaden = schaden + zusatz;
+            }
+            else
+            {
+                schaden = 0;
+            }
+
             if ((istLeben - schaden) > 0)
             {
-                istLeben = istLeben - schaden;
+                //istLeben = istLeben - schaden; In Hauptprogramm ausgelagert
                 return schaden;
             }
             else if ((istLeben - schaden) <= 0)
@@ -66,9 +129,27 @@ namespace WPFProto
 
         public double Genesung()
         {
+            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Genesung.wav");
+            try
+            {
+                simpleSound.Play();
+            }
+            catch
+            {
+            }
+
             Attacke = new HealingEffects();
-            double schaden = 0;
+            //double schaden = 0;
             schaden = Attacke.angriff(staerkeG, nameG, accuG);
+            if (schaden > 0)
+            {
+                schaden = schaden + zusatz;
+            }
+            else
+            {
+                schaden = 0;
+            }
+
             if ((istLeben + schaden) < maxLeben)
             {
                 istLeben = istLeben + schaden;

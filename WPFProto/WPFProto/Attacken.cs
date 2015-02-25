@@ -57,15 +57,54 @@ namespace WPFProto
         }
     }
 
-    /*class StatusAttack : ITFAttacken                                                 // Statusattacken sollen den Gegner bzw. sich selbst beeinflussen, kommt noch
+    class StatusAttack : ITFAttacken                                                 // Statusattacken sollen den Gegner bzw. sich selbst beeinflussen, kommt noch
     {
-        public void angriff(double stärke, string name, double accuracy)
-        {
+        static Random Rnd = new Random();
+        double acc = Rnd.Next(0, 100);
+        double rand = Rnd.Next(0, 100);
+        double starke = 0;
 
+        
+        public double angriff(double stärke, string name, double accuracy)
+        {
+            if (acc <= accuracy)
+            {
+                if (rand <= 50)
+                {
+                    starke = 15;
+                }
+                else if ((rand <= 75) && (rand > 50))
+                {
+                    starke = 20;
+                }
+                else if ((rand <= 85) && (rand > 75))
+                {
+                    starke = 25;
+                }
+                else if ((rand <= 93) && (rand > 85))
+                {
+                    starke = 30;
+                }
+                else if ((rand <= 97) && (rand > 93))
+                {
+                    starke = 35;
+                }
+                else
+                {
+                    starke = 40;
+                }
+            }
+            else
+            {
+                starke = 0;
+            }
+
+            return starke;
         }
+
     }
 
-
+/*
     class DoubleAttack : ITFAttacken                                                 // Attacken die über mehrere Züge gehen, kommt noch
     {
         public void angriff(double stärke, string name, double accuracy)

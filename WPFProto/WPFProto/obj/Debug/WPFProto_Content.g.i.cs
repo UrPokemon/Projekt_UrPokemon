@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("display.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("others_throw-try1.gif")]
 
 

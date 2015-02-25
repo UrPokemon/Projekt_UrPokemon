@@ -4,15 +4,19 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         Title="MainWindow" Height="350" Width="525" MaxHeight="350" MaxWidth="525" MinHeight="350" MinWidth="525">
     <Grid>
-        
+
         <Image Source="hintergrund.jpg" Stretch="Fill"/>
         <Image Name="ug1" Margin="285,136,40,104" Source="Untergrund.jpg" Stretch="Fill"/>
         <Image Name="ug2" Margin="40,136,285,104" Source="Untergrund.jpg" Stretch="Fill"/>
         <Image Name="b" Margin="311,94,74,128" gif:ImageBehavior.AnimatedSource="003.gif" Stretch="Fill" RenderTransformOrigin="0.368,0.61"/>
         <Image Name="g" Margin="40,23,316,128" gif:ImageBehavior.AnimatedSource="006a.gif" Stretch="Fill"/>
 
+
+
         <Image Name ="LR1" Margin="145,30,280,270" Source="lebensanzeige.png" Stretch="Fill"/>
         <Image Name ="LR2" Margin="390,30,35,270" Source="lebensanzeige.png" Stretch="Fill"/>
+
+        <!--<Image Name ="Ball1" Margin="107,152,370,128" gif:ImageBehavior.AnimatedSource="giphy.gif" Stretch="Fill"/>-->
 
         <Image Name="L1" Height="4" Width="62" Margin="159,29,280,270" Source="lebensbarH.png" Stretch="Fill"/>
         <Canvas Height="4" Width="62" Margin="159,29,280,270">
@@ -23,7 +27,7 @@
         <Canvas Height="4" Width="62" Margin="408,29,38,270">
         <Image Name ="LB2" Width="62" Height="4" Source="lebensbar.png" Stretch="Fill" />
         </Canvas>
-        
+
         <!--<Button Name="A1" Click="A1_Click_1" Margin="22,243,358,48">
             <Button.Style>
                 <Style TargetType="Button">
@@ -38,23 +42,29 @@
         </Button>-->
         <TextBlock Name="BT" Text="" Margin="20,23,15,104" />
         <TextBlock Name="T1" Text="" FontSize="15" Margin="20,235,190,15"></TextBlock>
+        <TextBox Name="ES1" Text="" Margin="20,268,190,15" ></TextBox>
+        <TextBox Name="ES2" Text="" Margin="20,268,190,15" ></TextBox>
         <TextBlock Name="T2" FontSize="15" Margin="355,235,15,15"></TextBlock>
 
-        <Button Name="A1" Content="Tackle"      Click="A1_Click_1"  Margin="20,235,360,56"/>
-        <Button Name="A2" Content="Flammenwurf" Click="A2_Click_1"  Margin="173,235,207,56"/>
-        <Button Name="A3" Content="Genesung"    Click="A3_Click_1"  Margin="20,265,360,26"/>
+        <Button Name="A1" Content="Tackle"      Click="A1_Click_1"  Margin="20,235,360,56"  MouseEnter="A1_Hover" MouseLeave="A1_Leave"/>
+        <Button Name="A2" Content="Flammenwurf" Click="A2_Click_1"  Margin="173,235,207,56" MouseEnter="A2_Hover" MouseLeave="A1_Leave"/>
+        <Button Name="A3" Content="Genesung"    Click="A3_Click_1"  Margin="20,265,360,26"  MouseEnter="A3_Hover" MouseLeave="A1_Leave"/>
+        <Button Name="A4" Content="Brüller"     Click="A4_Click_1"  Margin="173,265,207,26" MouseEnter="A4_Hover" MouseLeave="A1_Leave"/>
 
-        <Button Name="B1" Content="Tackle"      Click="B1_Click_1"  Margin="20,235,360,56"/>
-        <Button Name="B2" Content="Rasierblatt" Click="B2_Click_1"  Margin="173,235,207,56"/>
-        <Button Name="B3" Content="Erholung"    Click="B3_Click_1"  Margin="20,265,360,26"/>
+        <Button Name="B1" Content="Tackle"      Click="B1_Click_1"  Margin="20,235,360,56"  MouseEnter="B1_Hover" MouseLeave="A1_Leave"/>
+        <Button Name="B2" Content="Rasierblatt" Click="B2_Click_1"  Margin="173,235,207,56" MouseEnter="B2_Hover" MouseLeave="A1_Leave"/>
+        <Button Name="B3" Content="Erholung"    Click="B3_Click_1"  Margin="20,265,360,26"  MouseEnter="B3_Hover" MouseLeave="A1_Leave"/>
+        <Button Name="B4" Content="Focus"       Click="B4_Click_1"  Margin="173,265,207,26" MouseEnter="B4_Hover" MouseLeave="A1_Leave"/>
         
         <Button Name="W" Content="Weiter" Click="W1_Click_1" Margin="355,235,15,56"></Button>
         <Button Name="WB" Content="Weiter" Click="WB_Click_1" Margin="355,235,15,56"/>
         <Button Name="WE" Content="Weiter" Click="WE_Click_1" Margin="355,235,15,56"/>
+        <Button Name="WS1" Content="Weiter" Click="WS1_Click_1" Margin="355,235,15,56"/>
+        <Button Name="WS2" Content="Weiter" Click="WS2_Click_1" Margin="355,235,15,56"/>
 
-        <Button Name="Aufg" Content="Aufgeben" Click="Aufg_Click_1" Margin="355,268,15,23"/>
+        <Button Name="Aufg" Content="Aufgeben" Click="Aufg_Click_1" Margin="355,277,17,12"/>
 
-        <Button Name="end" Content="Ende" Click="end_Click_1" Margin="355,268,15,23"/>
+        <Button Name="end" Content="Ende" Click="end_Click_1" Margin="355,261,17,30"/>
 
         <Image Margin="124,20,373,275" Source="pfeil.png" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">
             <Image.RenderTransform>
@@ -66,7 +76,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Margin="358,32,141,263" Source="pfeil.png" Name="PfeilB" Stretch="Fill" RenderTransformOrigin="-4.114,-1.685">
+        <Image Margin="365,20,132,275" Source="pfeil.png" Name="PfeilB" Stretch="Fill" RenderTransformOrigin="-4.114,-1.685">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -76,6 +86,9 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+
+
+
 
 
 
