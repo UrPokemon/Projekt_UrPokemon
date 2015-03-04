@@ -65,7 +65,6 @@ namespace WPFProto
             }
 
             Attacke = new NormalAttack();
-            //double schaden = 0;
             schaden = Attacke.angriff(staerkeR, nameR, accuR);
             if (schaden > 0)
             {
@@ -78,7 +77,6 @@ namespace WPFProto
 
             if ((istLeben - schaden) > 0)
             {
-                //istLeben = istLeben - schaden; Ausgelagert in Hauptprogramm um Schadensverringerung korrekt ausführen zu können
                 return schaden;
             }
             else if ((istLeben - schaden) <= 0)
@@ -102,7 +100,6 @@ namespace WPFProto
             }
 
             Attacke = new NormalAttack();
-            //double schaden = 0;
             schaden = Attacke.angriff(staerkeT, nameT, accuT);
             if (schaden > 0)
             {
@@ -115,7 +112,6 @@ namespace WPFProto
 
             if ((istLeben - schaden) > 0)
             {
-                //istLeben = istLeben - schaden; In Hauptprogramm ausgelagert
                 return schaden;
             }
             else if ((istLeben - schaden) <= 0)
@@ -139,7 +135,6 @@ namespace WPFProto
             }
 
             Attacke = new HealingEffects();
-            //double schaden = 0;
             schaden = Attacke.angriff(staerkeG, nameG, accuG);
             if (schaden > 0)
             {

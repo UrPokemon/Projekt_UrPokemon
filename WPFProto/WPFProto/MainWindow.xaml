@@ -64,7 +64,7 @@
 
         <Button Name="Aufg" Content="Aufgeben" Click="Aufg_Click_1" Margin="355,277,17,12"/>
 
-        <Button Name="end" Content="Ende" Click="end_Click_1" Margin="357,268,15,23"/>
+        <Button Name="end" Content="Ende" Click="end_Click_1" Margin="355,261,17,30"/>
 
         <Image Margin="124,20,373,275" Source="pfeil.png" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">
             <Image.RenderTransform>

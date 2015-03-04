@@ -9,7 +9,6 @@ namespace WPFProto
     public class Pokémon
     {
         ITFAttacken attacke;
-        //double schaden = 0;
 
         public ITFAttacken Attacke
         {
