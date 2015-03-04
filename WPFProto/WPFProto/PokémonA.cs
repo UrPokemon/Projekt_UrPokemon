@@ -34,7 +34,7 @@ namespace WPFProto
 
         public double Brüller()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Brüller.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Brüller.wav");
             try
             {
                 simpleSound.Play();
@@ -42,6 +42,7 @@ namespace WPFProto
             catch
             {
             }
+            
             Attacke = new StatusAttack();
             brull = Attacke.angriff(staerkeB, nameB, accuB);
 
@@ -50,7 +51,7 @@ namespace WPFProto
 
         public double Flammenwurf()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Flammen.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Flammen.wav");
             try
             {
                 simpleSound.Play();
@@ -79,7 +80,7 @@ namespace WPFProto
 
         public double Tackle()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Tackle.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Tackle.wav");
             try
             {
                 simpleSound.Play();
@@ -107,7 +108,7 @@ namespace WPFProto
 
         public double Genesung()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Genesung.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Genesung.wav");
             try
             {
                 simpleSound.Play();

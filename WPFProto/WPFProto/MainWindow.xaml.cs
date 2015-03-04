@@ -87,6 +87,22 @@ namespace WPFProto
             B4.Visibility = Visibility.Hidden;
         }
 
+        public void AVis()
+        {
+            A1.Visibility = Visibility.Visible;
+            A2.Visibility = Visibility.Visible;
+            A3.Visibility = Visibility.Visible;
+            A4.Visibility = Visibility.Visible;
+        }
+
+        public void BVis()
+        {
+            B1.Visibility = Visibility.Visible;
+            B2.Visibility = Visibility.Visible;
+            B3.Visibility = Visibility.Visible;
+            B4.Visibility = Visibility.Visible;
+        }
+
         public void NeuesSpiel()
         {
             T1.Text = "Wenn sie ein neues Spiel starten\n wollen klicken sie auf neues Spiel.\n Wenn nicht klicken sie auf Ende";
@@ -317,7 +333,7 @@ namespace WPFProto
             {
                 T1.Text = "";
 
-                AHide();
+                AVis();
 
                 PfeilB.Visibility = Visibility.Hidden;
                 PfeilG.Visibility = Visibility.Visible;
@@ -330,7 +346,7 @@ namespace WPFProto
             {
                 T1.Text = "";
 
-                BHide();
+                BVis();
 
                 W.Visibility = Visibility.Hidden;
                 Aufg.Visibility = Visibility.Visible;
@@ -415,7 +431,7 @@ namespace WPFProto
             else
             {
 
-                T1.Text = "Name muss mind. 3Zeichen lang sein";
+                T1.Text = "Name muss mind. 3 Zeichen lang sein";
             }
 
         }
@@ -443,7 +459,7 @@ namespace WPFProto
             if (zug == 1)
             {
                 BHide();
-                T1.Text = "Spieler 2 hat aufgegeben.\nSpieler 1 gewinnt.";
+                T1.Text = S2+" hat aufgegeben.\n"+S1+" gewinnt.";
                 WE.Visibility = Visibility.Visible;
                 Aufg.Visibility = Visibility.Hidden;
             }

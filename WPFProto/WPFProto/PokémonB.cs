@@ -36,7 +36,7 @@ namespace WPFProto
 
         public double Focus()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Focus.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Focus.wav");
             try
             {
                 simpleSound.Play();
@@ -55,7 +55,7 @@ namespace WPFProto
 
         public double Rasierblatt()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Rasier.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Rasier.wav");
             try
             {
                 simpleSound.Play();
@@ -90,7 +90,7 @@ namespace WPFProto
 
         public double Tackle()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Tackle.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Tackle.wav");
             try
             {
                 simpleSound.Play();
@@ -125,7 +125,7 @@ namespace WPFProto
 
         public double Genesung()
         {
-            SoundPlayer simpleSound = new SoundPlayer(@"D:\Users\Fabian\Documents\Schule 5BHWII 2014-15\PPM\Köllö\sounds\Genesung.wav");
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\Philipp\Documents\2014-15\PPM\Köllö\Projekt_UrPokemon\sounds\Genesung.wav");
             try
             {
                 simpleSound.Play();
