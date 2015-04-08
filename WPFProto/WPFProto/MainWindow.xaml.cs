@@ -473,10 +473,6 @@ namespace WPFProto
             S2 = ES2.Text;
             if (S2.Length >= 3)
             {
-                //Reset der Namenseingabe
-                ES1.Text = "";
-                ES2.Text = "";
-
                 WS2.Visibility = Visibility.Hidden;
                 ES2.Visibility = Visibility.Hidden;
 
