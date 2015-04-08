@@ -4,7 +4,6 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         Title="MainWindow" Height="350" Width="525" MaxHeight="350" MaxWidth="525" MinHeight="350" MinWidth="525">
     <Grid>
-
         <Image Source="hintergrund.jpg" Stretch="Fill"/>
         <Image Name="ug1" Margin="285,136,40,104" Source="Untergrund.jpg" Stretch="Fill"/>
         <Image Name="ug2" Margin="40,136,285,104" Source="Untergrund.jpg" Stretch="Fill"/>
@@ -27,25 +26,13 @@
         <Canvas Height="4" Width="62" Margin="408,29,38,270">
         <Image Name ="LB2" Width="62" Height="4" Source="lebensbar.png" Stretch="Fill" />
         </Canvas>
-
-        <!--<Button Name="A1" Click="A1_Click_1" Margin="22,243,358,48">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Content" Value="Test1"/>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Content" Value="Flammenwurf"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>-->
+        
         <TextBlock Name="BT" Text="" Margin="20,23,15,104" />
-        <TextBlock Name="T1" Text="" FontSize="15" Margin="20,235,190,15"></TextBlock>
-        <TextBox Name="ES1" Text="" Margin="20,268,190,15" ></TextBox>
-        <TextBox Name="ES2" Text="" Margin="20,268,190,15" ></TextBox>
-        <TextBlock Name="T2" FontSize="15" Margin="355,235,15,15"></TextBlock>
-
+        <TextBlock Name="T1" Text="" FontSize="15" Margin="20,235,190,15"/>
+        <TextBox Name="ES1" Text="" Margin="20,268,190,15" />
+        <TextBox Name="ES2" Text="" Margin="20,268,190,15" />
+        <TextBlock Name="T2" FontSize="15" Margin="355,235,15,15"/>
+        
         <Button Name="A1" Content="Tackle"      Click="A1_Click_1"  Margin="20,235,360,56"  MouseEnter="A1_Hover" MouseLeave="A1_Leave"/>
         <Button Name="A2" Content="Flammenwurf" Click="A2_Click_1"  Margin="173,235,207,56" MouseEnter="A2_Hover" MouseLeave="A1_Leave"/>
         <Button Name="A3" Content="Genesung"    Click="A3_Click_1"  Margin="20,265,360,26"  MouseEnter="A3_Hover" MouseLeave="A1_Leave"/>
@@ -56,7 +43,7 @@
         <Button Name="B3" Content="Erholung"    Click="B3_Click_1"  Margin="20,265,360,26"  MouseEnter="B3_Hover" MouseLeave="A1_Leave"/>
         <Button Name="B4" Content="Focus"       Click="B4_Click_1"  Margin="173,265,207,26" MouseEnter="B4_Hover" MouseLeave="A1_Leave"/>
         
-        <Button Name="W" Content="Weiter" Click="W1_Click_1" Margin="355,235,15,56"></Button>
+        <Button Name="W" Content="Weiter" Click="W1_Click_1" Margin="355,235,15,56"/>
         <Button Name="WB" Content="Weiter" Click="WB_Click_1" Margin="355,235,15,56"/>
         <Button Name="WE" Content="Weiter" Click="WE_Click_1" Margin="355,235,15,56"/>
         <Button Name="WS1" Content="Weiter" Click="WS1_Click_1" Margin="355,235,15,56"/>
@@ -86,18 +73,5 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <TextBox Name="D1" Margin="20,235,190,15"></TextBox>-->
-
     </Grid>
 </Window>

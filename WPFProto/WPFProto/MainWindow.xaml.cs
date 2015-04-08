@@ -169,7 +169,7 @@ namespace WPFProto
             W.Visibility = Visibility.Visible;
 
             LB2Scale();
-            T1.Text = "Glurak setzt " + Glurak.nameT + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/  "Bisafloors Leben sinkt auf " + Glurak.istLeben;
+            T1.Text = "Glurak setzt " + Glurak.nameT + " ein! \r" + "Bisafloors Leben sinkt auf " + Glurak.istLeben;
 
             AHide();
             Aufg.Visibility = Visibility.Hidden;
@@ -181,13 +181,12 @@ namespace WPFProto
 
         private void A2_Click_1(object sender, RoutedEventArgs e)
         {
-            //double altLeben = Bisafloor.istLeben;
             W.Visibility = Visibility.Visible;
 
             Glurak.Flammenwurf();
 
             LB2Scale();
-            T1.Text = "Glurak setzt " + Glurak.nameF + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/ "Bisafloors Leben sinkt auf " + Glurak.istLeben;
+            T1.Text = "Glurak setzt " + Glurak.nameF + " ein! \r" + "Bisafloors Leben sinkt auf " + Glurak.istLeben;
 
             AHide();
             Aufg.Visibility = Visibility.Hidden;
@@ -199,7 +198,6 @@ namespace WPFProto
 
         private void A3_Click_1(object sender, RoutedEventArgs e)
         {
-            //double altLeben = Glurak.istLeben;
             W.Visibility = Visibility.Visible;
 
             Bisafloor.Genesung();
@@ -240,7 +238,6 @@ namespace WPFProto
 
         private void B1_Click_1(object sender, RoutedEventArgs e)
         {
-            //double altleben = Glurak.istLeben;
             W.Visibility = Visibility.Visible;
 
             Bisafloor.Tackle();
@@ -256,7 +253,7 @@ namespace WPFProto
             Bisafloor.istLeben = Bisafloor.istLeben - Bisafloor.schaden;
 
             LB1Scale();
-            T1.Text = "Bisafloor setzt " + Bisafloor.nameT + " ein! \r" + /*schaden + " Schaden verursacht! \r" +*/ "Gluraks Leben sinkt auf " + Bisafloor.istLeben;
+            T1.Text = "Bisafloor setzt " + Bisafloor.nameT + " ein! \r" + "Gluraks Leben sinkt auf " + Bisafloor.istLeben;
 
             BHide();
             Aufg.Visibility = Visibility.Hidden;
@@ -268,7 +265,6 @@ namespace WPFProto
 
         private void B2_Click_1(object sender, RoutedEventArgs e)
         {
-            //double altleben=Glurak.istLeben;
             W.Visibility = Visibility.Visible;
 
             Bisafloor.Rasierblatt();
@@ -284,7 +280,7 @@ namespace WPFProto
             Bisafloor.istLeben = Bisafloor.istLeben - Bisafloor.schaden;
 
             LB1Scale();
-            T1.Text = "Bisafloor setzt " + Bisafloor.nameR + " ein! \r" + /*schaden + " Schaden verursacht! \r" + */"Gluraks Leben sinkt auf " + Bisafloor.istLeben;
+            T1.Text = "Bisafloor setzt " + Bisafloor.nameR + " ein! \r" + "Gluraks Leben sinkt auf " + Bisafloor.istLeben;
 
             BHide();
             Aufg.Visibility = Visibility.Hidden;
@@ -296,12 +292,11 @@ namespace WPFProto
 
         private void B3_Click_1(object sender, RoutedEventArgs e)
         {
-            //double altleben = Bisafloor.istLeben;
             W.Visibility = Visibility.Visible;
             Glurak.Genesung();
             
             LB2Scale();
-            T1.Text = "Bisafloor setzt " + Bisafloor.nameG + " ein! \r" + /*schaden + " Schaden verursacht! \r" + */"Bisafloors Leben steigt auf " + Glurak.istLeben;
+            T1.Text = "Bisafloor setzt " + Bisafloor.nameG + " ein! \r" + "Bisafloors Leben steigt auf " + Glurak.istLeben;
 
             BHide();
             Aufg.Visibility = Visibility.Hidden;
@@ -478,7 +473,7 @@ namespace WPFProto
             S2 = ES2.Text;
             if (S2.Length >= 3)
             {
-                //Resetten der Namenseingabe
+                //Reset der Namenseingabe
                 ES1.Text = "";
                 ES2.Text = "";
 
@@ -490,18 +485,26 @@ namespace WPFProto
 
                 LB1Scale();
                 LB2Scale();
+
                 end.Visibility = Visibility.Hidden;
+
                 g.Visibility   = Visibility.Visible;
                 b.Visibility   = Visibility.Visible;
+
                 ug1.Visibility = Visibility.Visible;
                 ug2.Visibility = Visibility.Visible;
+
                 L1.Visibility  = Visibility.Visible;
                 L2.Visibility  = Visibility.Visible;
+
                 LB1.Visibility = Visibility.Visible;
                 LB2.Visibility = Visibility.Visible;
+
                 BT.Visibility  = Visibility.Hidden;
+
                 LR1.Visibility = Visibility.Visible;
                 LR2.Visibility = Visibility.Visible;
+
                 WS2.Visibility = Visibility.Hidden;
 
                 if (RndNr3 < 1)
@@ -526,10 +529,6 @@ namespace WPFProto
             {
                 T1.Text = "Name muss mind. 3Zeichen lang sein";
             }
-
         }
-
-
-
     }
 }
