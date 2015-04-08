@@ -108,13 +108,7 @@
     <Resource Include="Untergrund.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="pfeil.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="lebensbar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lebensanzeige.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="hintergrund.jpg" />
@@ -123,13 +117,10 @@
     <Resource Include="lebensbarH.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="throw-try.gif" />
+    <Resource Include="lebensanzeige.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="giphy.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="others_throw-try1.gif" />
+    <Resource Include="pfeil.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

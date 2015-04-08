@@ -12,8 +12,8 @@
 
 
 
-        <Image Name ="LR1" Margin="145,30,280,270" Source="lebensanzeige.png" Stretch="Fill"/>
-        <Image Name ="LR2" Margin="390,30,35,270" Source="lebensanzeige.png" Stretch="Fill"/>
+        <Image Name ="LR1" Margin="145,30,280,270" Source="lebensanzeige.jpg" Stretch="Fill"/>
+        <Image Name ="LR2" Margin="390,30,35,270" Source="lebensanzeige.jpg" Stretch="Fill"/>
 
         <!--<Image Name ="Ball1" Margin="107,152,370,128" gif:ImageBehavior.AnimatedSource="giphy.gif" Stretch="Fill"/>-->
 
@@ -53,7 +53,7 @@
 
         <Button Name="end" Content="Ende" Click="end_Click_1" Margin="355,261,17,30"/>
 
-        <Image Margin="124,20,373,275" Source="pfeil.png" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">
+        <Image Margin="124,20,373,275" Source="pfeil.jpg" Name="PfeilG" Stretch="Fill" RenderTransformOrigin="-5.314,-2.198">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -63,7 +63,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Margin="365,20,132,275" Source="pfeil.png" Name="PfeilB" Stretch="Fill" RenderTransformOrigin="-4.114,-1.685">
+        <Image Margin="365,20,132,275" Source="pfeil.jpg" Name="PfeilB" Stretch="Fill" RenderTransformOrigin="-4.114,-1.685">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

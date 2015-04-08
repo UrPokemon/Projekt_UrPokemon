@@ -123,7 +123,7 @@ namespace WPFProto
 
                 LB1.Width = 0;
 
-                T1.Text = "Glurak kann nicht mehr weiterkämpfen, \rBisafloor gewinnt!";
+                T1.Text = "Glurak kann nicht mehr weiterkämpfen, \r"+S2+" gewinnt!";
                 WE.Visibility = Visibility.Visible;
             }
 
@@ -137,7 +137,7 @@ namespace WPFProto
 
                 LB2.Width = 0;
 
-                T1.Text = "Bisafloor kann nicht mehr weiterkämpfen, \rGlurak gewinnt!";
+                T1.Text = "Bisafloor kann nicht mehr weiterkämpfen, \r"+S1+" gewinnt!";
                 WE.Visibility = Visibility.Visible;
             }
         }
